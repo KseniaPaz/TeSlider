@@ -1,6 +1,10 @@
 <template>
     <div class="teachers__item">
       <img :src="require('../assets/img/' + userData.image)" alt="photo">
+      <h3 class="teachers__name"> {{ userData.name }} </h3>
+        <p class="teachers__prof"> {{ userData.prof }} </p>
+        <p class="teachers__next" @click="showPopupInfo">Подробнее</p>
+        <button @click="sendDataToParent">next</button>
 
         
     </div>
