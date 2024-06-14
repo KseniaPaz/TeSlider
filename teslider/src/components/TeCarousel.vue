@@ -9,12 +9,12 @@
                 />            
             </div>
     
-            <div>
-                <img @click="prevSlide" src="../assets/img/Arrow - Left Circle.svg" alt="left">
-                <button @click="nextSlide"><img src="../assets/img/Arrow - Right Circle.svg" alt="right"></button>
-            </div>  
+            
         </div>
-
+        <div>
+                <img @click="prevSlide" src="../assets/img/Arrow - Left Circle.svg" alt="left">
+                <img @click="nextSlide" src="../assets/img/Arrow - Right Circle.svg" alt="right">
+        </div>
     </div>
     
 </template>
@@ -49,7 +49,7 @@
                 
             },
             nextSlide() {
-                if (this.currentSlideIndex >= carousel_data.length - 1) {
+                if (this.currentSlideIndex >= this.carousel_data.length - 1) {
                     this.currentSlideIndex = 0
                 } else {
                    this.currentSlideIndex++
