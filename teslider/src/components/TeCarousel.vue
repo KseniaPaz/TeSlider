@@ -49,7 +49,7 @@
                 
             },
             nextSlide() {
-                if (this.currentSlideIndex >= this.carousel_data.length - 1) {
+                if (this.currentSlideIndex >= this.carousel_data.length - 3) {
                     this.currentSlideIndex = 0
                 } else {
                    this.currentSlideIndex++
